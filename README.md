@@ -1,4 +1,4 @@
-# Rails Stage
+# Stagery
 
 Know at what development life cycle stage you are 👀
 
