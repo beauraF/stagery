@@ -21,4 +21,11 @@ class StageryTest < Minitest::Test
 
     assert_equal "development", Stagery.stage
   end
+
+  def test_stage_can_be_set_at_runetime
+    ENV['STAGERY_STAGE'] = 'staging'
+    Stagery.stage = 'production'
+
+    assert_equal "production", Stagery.stage
+  end
 end

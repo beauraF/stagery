@@ -7,4 +7,8 @@ module Stagery
   def self.stage
     @_stage ||= ActiveSupport::StringInquirer.new(ENV["STAGERY_STAGE"] || "development")
   end
+
+  def self.stage=(stage)
+    @_stage = ActiveSupport::StringInquirer.new(stage)
+  end
 end
