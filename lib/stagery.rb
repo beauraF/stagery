@@ -2,6 +2,7 @@
 
 require 'active_support/string_inquirer'
 require_relative 'stagery/version'
+require_relative 'stagery/test_helper'
 
 module Stagery
   def self.stage
