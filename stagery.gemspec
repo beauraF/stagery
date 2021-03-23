@@ -3,7 +3,7 @@ require_relative "lib/stagery/version"
 Gem::Specification.new do |spec|
   spec.name        = "stagery"
   spec.version     = Stagery::VERSION
-  spec.summary     = "Know at what development life cycle stage you are"
+  spec.summary     = "Know at what development life cycle stage you are 👀"
   spec.homepage    = "https://github.com/beauraF/stagery"
   spec.license     = "MIT"
 
