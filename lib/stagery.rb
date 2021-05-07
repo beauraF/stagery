@@ -6,7 +6,10 @@ require_relative 'stagery/test_helper'
 
 module Stagery
   def self.stage
-    @_stage ||= ActiveSupport::StringInquirer.new(ENV["STAGERY_STAGE"] || "development")
+    @_stage ||=
+      ActiveSupport::StringInquirer.new(
+        ENV["STAGERY_STAGE"] || (defined?(Rails) ? ::Rails.env : "development")
+      )
   end
 
   def self.stage=(stage)

@@ -29,6 +29,7 @@ Stagery.stage.ci? # => false
 ```
 
 If `STAGERY_STAGE` environment variable is not set, `Stagery.stage` will automatically fallback to `development`.
+If you are using Rails, it will automatically fallback to `Rails.env`.
 
 ## Contributing
 
